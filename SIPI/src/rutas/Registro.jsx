@@ -46,7 +46,7 @@ const handleSubmit = async (event) => {
   };
 
   try {
-      const response = await fetch('https://sipi-back.onrender.com/user', {
+      const response = await fetch('https://sipi-back-1163.onrender.com/user', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'
