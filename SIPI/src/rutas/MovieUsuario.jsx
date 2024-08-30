@@ -16,7 +16,7 @@ const MovieUsuario = () => {
       // useEffect para comprobar si la película está en favoritas del usuario
   useEffect(() => {
     const obtenerFavoritasUsuario = async () => {
-        const url = `https://sipi-back.onrender.com/user/favoritas/${nom_usuario}`;
+        const url = `https://sipi-back-7dkp.onrender.com/user/favoritas/${nom_usuario}`;
       
         return fetch(url)
           .then(response => {
@@ -40,7 +40,7 @@ const MovieUsuario = () => {
   // useEffect para comprobar si la película está en pendientes del usuario
   useEffect(() => {
     const obtenerPendientesUsuario = async () => {
-        const url = `https://sipi-back.onrender.com/user/pendientes/${nom_usuario}`;
+        const url = `https://sipi-back-7dkp.onrender.com/user/pendientes/${nom_usuario}`;
       
         return fetch(url)
           .then(response => {
@@ -62,7 +62,7 @@ const MovieUsuario = () => {
   }, [nom_usuario, id]);
 
     const handleFavorita = () => {
-        const url = 'https://sipi-back.onrender.com/user/favorita';
+        const url = 'https://sipi-back-7dkp.onrender.com/user/favorita';
     
         const requestOptions = {
           method: 'POST',
@@ -85,7 +85,7 @@ const MovieUsuario = () => {
       };
     
       const handlePendiente = () => {
-        const url = 'https://sipi-back.onrender.com/user/pendiente';
+        const url = 'https://sipi-back-7dkp.onrender.com/user/pendiente';
     
         const requestOptions = {
           method: 'POST',
@@ -107,7 +107,7 @@ const MovieUsuario = () => {
           });
         };
         const handleEliminarFavorita = () => {
-            const url = `https://sipi-back.onrender.com/user/favorita/${id}`;
+            const url = `https://sipi-back-7dkp.onrender.com/user/favorita/${id}`;
           
             const requestOptions = {
               method: 'DELETE',
@@ -128,7 +128,7 @@ const MovieUsuario = () => {
               });
           };
           const handleEliminarPendiente = () => {
-            const url = `https://sipi-back.onrender.com/user/pendiente/${id}`;
+            const url = `https://sipi-back-7dkp.onrender.com/user/pendiente/${id}`;
           
             const requestOptions = {
               method: 'DELETE',
